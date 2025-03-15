@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using Shop.Domain.Common;
 
 namespace Shop.Domain.Entities
 {
-    internal class Category
+    public class Category : BaseEntity
     {
+        public string Name { get; set; }
+        public int? ParentId { get; set; }
+
+        public Category? Parent { get; set; }
+        public ICollection<Category>? Children { get; set; }
+        public ICollection<Product>? Products { get; set; }
     }
 }
