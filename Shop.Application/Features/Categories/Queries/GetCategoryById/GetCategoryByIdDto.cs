@@ -1,6 +1,4 @@
-﻿
-
-namespace Shop.Application.DTOs.CategoryDto
+﻿namespace Shop.Application.Features.Categories.Queries.GetCategoryById
 {
     public class GetCategoryByIdDto
     {

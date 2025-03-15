@@ -8,7 +8,7 @@ using Shop.Domain.Entities;
 using Shop.Shared;
 using System.Numerics;
 
-namespace Shop.Application.Features.Categories.Commands
+namespace Shop.Application.Features.Categories.Commands.UpdateCategory
 {
     public class UpdateCategoryCommand : IRequest<ResultObject>, IMapFrom<Category>
     {
@@ -40,7 +40,7 @@ namespace Shop.Application.Features.Categories.Commands
         {
             Category? category = await _unitOfWork.Repository<Category>()
                 .GetByIdAsync(request.Id);
-            if(category is null)
+            if (category is null)
             {
                 return new ResultObject
                 {

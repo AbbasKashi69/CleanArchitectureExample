@@ -1,9 +1,13 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Shop.Application.DTOs.CategoryDto;
-using Shop.Application.Features.Categories.Commands;
+using Shop.Application.Features.Categories.Commands.CreateCategory;
+using Shop.Application.Features.Categories.Commands.DeleteCategory;
+using Shop.Application.Features.Categories.Commands.UpdateCategory;
 using Shop.Application.Features.Categories.Queries;
+using Shop.Application.Features.Categories.Queries.GetAllCategories;
+using Shop.Application.Features.Categories.Queries.GetCategoriesWithPagination;
+using Shop.Application.Features.Categories.Queries.GetCategoryById;
 using Shop.Shared;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 

@@ -3,11 +3,10 @@
 using Mapster;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Shop.Application.DTOs.CategoryDto;
 using Shop.Application.Interfaces.Repositories;
 using Shop.Domain.Entities;
 
-namespace Shop.Application.Features.Categories.Queries
+namespace Shop.Application.Features.Categories.Queries.GetAllCategories
 {
     public class GetAllCategoriesQuery : IRequest<List<GetAllCategoryDto>>
     {
@@ -27,7 +26,7 @@ namespace Shop.Application.Features.Categories.Queries
         {
             return await _unitOfWork.Repository<Category>()
                 .Entities
-                .OrderBy(d=> d.Name)
+                .OrderBy(d => d.Name)
                 .ProjectToType<GetAllCategoryDto>()
                 .ToListAsync(cancellationToken);
         }

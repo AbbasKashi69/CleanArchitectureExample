@@ -8,6 +8,7 @@ namespace Shop.Application.Features.Products.Queries.GetAllProduct
     {
         public GetAllProductQueryValidator()
         {
+
         }
     }
 }

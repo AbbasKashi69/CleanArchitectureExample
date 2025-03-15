@@ -8,7 +8,7 @@ using Shop.Domain.Entities;
 using Shop.Shared;
 using System.Numerics;
 
-namespace Shop.Application.Features.Categories.Commands
+namespace Shop.Application.Features.Categories.Commands.DeleteCategory
 {
     public class DeleteCategoryCommand : IRequest<ResultObject>, IMapFrom<Category>
     {

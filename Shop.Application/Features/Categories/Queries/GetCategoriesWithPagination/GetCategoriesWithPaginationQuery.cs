@@ -4,12 +4,11 @@ using Shop.Domain.Entities;
 using Shop.Shared;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using System.Numerics;
-using Shop.Application.DTOs.CategoryDto;
 using MapsterMapper;
 using Mapster;
 using Shop.Application.Extensions;
 
-namespace Shop.Application.Features.Categories.Queries
+namespace Shop.Application.Features.Categories.Queries.GetCategoriesWithPagination
 {
     public class GetCategoriesWithPaginationQuery : IRequest<PaginatedResult<GetCategoriesWithPaginationDto>>
     {

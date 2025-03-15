@@ -1,10 +1,9 @@
 ﻿using MapsterMapper;
 using MediatR;
-using Shop.Application.DTOs.CategoryDto;
 using Shop.Application.Interfaces.Repositories;
 using Shop.Domain.Entities;
 
-namespace Shop.Application.Features.Categories.Queries
+namespace Shop.Application.Features.Categories.Queries.GetCategoryById
 {
     public class GetCategoryByIdQuery : IRequest<GetCategoryByIdDto?>
     {
